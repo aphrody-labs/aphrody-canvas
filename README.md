@@ -107,6 +107,9 @@ bun run vendor:check
 bun pm pack --destination <dir>
 ```
 
+Lint and format checks use Bun's native `bun lint` and `bun fmt` commands
+directly, without `bunx`, standalone Oxc tools, or subprocess backends.
+
 ## Publishing
 
 `.github/workflows/release-m3-packages.yml` publishes this package before
